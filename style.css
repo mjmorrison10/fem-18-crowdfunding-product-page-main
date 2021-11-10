@@ -78,6 +78,7 @@ html {
   max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
+  padding-bottom: 10rem;
 }
 
 /* ///////////////////////////////////////////////////////////////// */
@@ -121,6 +122,7 @@ nav {
   background-color: white;
   border: 1px solid
     hsl(var(--darkGray-hue), var(--darkGray-sat), var(--darkGray-lite), 0.25);
+  padding: 2rem;
 }
 
 .section h1,
@@ -263,6 +265,52 @@ main {
   height: 100%;
   background-color: var(--color-moderateCyan);
   border-radius: 50px;
+}
+
+
+.about-product p {
+  line-height: 1.75;
+}
+
+.pkg {
+  margin-top: 2rem;
+}
+
+.pkg-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.pkg-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pkg-left div {
+  font-weight: var(--fontWeight-bold);
+  font-size: var(--fontSize-x5-large);
+}
+
+.pkg-left div span {
+  color: var(--color-darkGray);
+  font-size: var(--fontSize-medium);
+  font-weight: var(--fontWeight-medium);
+}
+
+.pkg .btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: var(--fontWeight-medium);
+}
+
+.special-pkg {
+  opacity: 0.5;
+}
+
+.btn-third {
+  background-color: var(--color-darkGray);
 }
 
 /* ///////////////////////////////////////////////////////////////// */
