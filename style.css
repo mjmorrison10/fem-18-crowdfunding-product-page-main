@@ -1,0 +1,92 @@
+:root {
+  /* ### Primary */
+
+  --color-moderateCyan: hsl(176, 50%, 47%);
+  --color-moderateCyan-hue: 176;
+  --color-moderateCyan-sat: 50%;
+  --color-moderateCyan-lite: 47%;
+  --color-moderateCyan-hsl: var(--color-moderateCyan-hue),
+    var(--color-moderateCyan-sat), var(--color-moderateCyan-lite);
+
+  --color-darkCyan: hsl(176, 72%, 28%);
+  --color-darkCyan-hue: 176;
+  --color-darkCyan-sat: 72%;
+  --color-darkCyan-lite: 28%;
+  --color-darkCyan-hsl: var(--color-darkCyan-hue), var(--color-darkCyan-sat),
+    var(--color-darkCyan-lite);
+
+  /* ### Neutral */
+
+  --color-black: hsl(0, 0%, 0%);
+  --color-black-hue: 0;
+  --color-black-sat: 0%;
+  --color-black-lite: 0%;
+  --color-black-hsl: var(--color-black-hue), var(--color-black-sat),
+    var(--color-black-lite);
+
+  --color-darkGray: hsl(0, 0%, 48%);
+  --color-darkGray-hue: 0;
+  --color-darkGray-sat: 0%;
+  --color-darkGray-lite: 48%;
+  --color-darkGray-hsl: var(--color-darkGray-hue), var(--color-darkGray-sat),
+    var(--color-darkGray-lite);
+
+  font-size: 16px;
+
+  --fontSize-x-8-small: calc(var(--fontSize) * 0.8);
+  --fontSize-x-75-small: calc(var(--fontSize) * 0.75);
+  --fontSize-x-7-small: calc(var(--fontSize) * 0.7);
+  --fontSize-x-6-small: calc(var(--fontSize) * 0.6);
+  --fontSize-x-5-small: calc(var(--fontSize) * 0.5);
+
+  --fontSize-medium: var(--fontSize);
+  --fontSize-x2-large: calc(var(--fontSize) * 1.2);
+  --fontSize-x4-large: calc(var(--fontSize) * 1.4);
+  --fontSize-x6-large: calc(var(--fontSize) * 1.6);
+  --fontSize-x8-large: calc(var(--fontSize) * 1.8);
+  --fontSize-2x-large: calc(var(--fontSize) * 2);
+
+  --fontWeight-light: 400;
+  --fontWeight-medium: 500;
+  --fontWeight-bold: 700;
+}
+
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(100, 100, 100, 0.05);
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+.wrapper {
+  background-color: white;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
