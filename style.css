@@ -2,36 +2,28 @@
   /* ### Primary */
 
   --color-moderateCyan: hsl(176, 50%, 47%);
-  --color-moderateCyan-hue: 176;
-  --color-moderateCyan-sat: 50%;
-  --color-moderateCyan-lite: 47%;
-  --color-moderateCyan-hsl: var(--color-moderateCyan-hue),
-    var(--color-moderateCyan-sat), var(--color-moderateCyan-lite);
+  --moderateCyan-hue: 176;
+  --moderateCyan-sat: 50%;
+  --moderateCyan-lite: 47%;
 
   --color-darkCyan: hsl(176, 72%, 28%);
-  --color-darkCyan-hue: 176;
-  --color-darkCyan-sat: 72%;
-  --color-darkCyan-lite: 28%;
-  --color-darkCyan-hsl: var(--color-darkCyan-hue), var(--color-darkCyan-sat),
-    var(--color-darkCyan-lite);
+  --darkCyan-hue: 176;
+  --darkCyan-sat: 72%;
+  --darkCyan-lite: 28%;
 
   /* ### Neutral */
 
   --color-black: hsl(0, 0%, 0%);
-  --color-black-hue: 0;
-  --color-black-sat: 0%;
-  --color-black-lite: 0%;
-  --color-black-hsl: var(--color-black-hue), var(--color-black-sat),
-    var(--color-black-lite);
+  --black-hue: 0;
+  --black-sat: 0%;
+  --black-lite: 0%;
 
   --color-darkGray: hsl(0, 0%, 48%);
-  --color-darkGray-hue: 0;
-  --color-darkGray-sat: 0%;
-  --color-darkGray-lite: 48%;
-  --color-darkGray-hsl: var(--color-darkGray-hue), var(--color-darkGray-sat),
-    var(--color-darkGray-lite);
+  --darkGray-hue: 0;
+  --darkGray-sat: 0%;
+  --darkGray-lite: 48%;
 
-  font-size: 16px;
+  --fontSize: 16px;
 
   --fontSize-x-8-small: calc(var(--fontSize) * 0.8);
   --fontSize-x-75-small: calc(var(--fontSize) * 0.75);
@@ -42,6 +34,7 @@
   --fontSize-medium: var(--fontSize);
   --fontSize-x2-large: calc(var(--fontSize) * 1.2);
   --fontSize-x4-large: calc(var(--fontSize) * 1.4);
+  --fontSize-x5-large: calc(var(--fontSize) * 1.5);
   --fontSize-x6-large: calc(var(--fontSize) * 1.6);
   --fontSize-x8-large: calc(var(--fontSize) * 1.8);
   --fontSize-2x-large: calc(var(--fontSize) * 2);
@@ -49,6 +42,10 @@
   --fontWeight-light: 400;
   --fontWeight-medium: 500;
   --fontWeight-bold: 700;
+
+  --borderRadius: 6px;
+
+  font-size: 16px;
 }
 
 * {
@@ -77,7 +74,7 @@ html {
 }
 
 .wrapper {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.05);
   max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
@@ -89,7 +86,6 @@ html {
 
 header {
   height: 45vh;
-  background-color: rgba(0, 0, 200, 0.1);
   background-image: url(./images/image-hero-desktop.jpg);
   background-size: cover;
   background-position: center;
@@ -119,6 +115,82 @@ nav {
 /* ///////////////////////////////////////////////////////////////// */
 /* Main///////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// */
+
+main {
+  width: 35vw;
+  margin: 0 auto;
+  margin-top: -5rem;
+}
+
+.title {
+  border-radius: var(--borderRadius);
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+.title h1 {
+  font-size: var(--fontSize-x8-large);
+  font-weight: var(--fontWeight-bold);
+}
+
+.title p {
+  font-size: var(--fontSize-medium);
+  font-weight: var(--fontWeight-light);
+  color: var(--color-darkGray);
+  margin: 1rem;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: var(--color-moderateCyan);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: var(--fontSize-medium);
+  font-weight: var(--fontWeight-bold);
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-left: 4rem;
+  display: flex;
+  position: relative;
+  color: var(--color-darkGray);
+}
+
+.btn-secondary i {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  bottom: 0%;
+  /* height: ; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-radius: 50%;
+  background-color: var(--color-black);
+}
+
+
+.back-the-product {
+    margin: 1rem 0;
+    background-color: white;
+}
+
 
 /* ///////////////////////////////////////////////////////////////// */
 /* Footer/////////////////////////////////////////////////////////// */
