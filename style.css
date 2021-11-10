@@ -109,6 +109,10 @@ nav {
   cursor: pointer;
 }
 
+.nav-menu li:hover {
+  text-decoration: underline rgba(255, 255, 255, 0.5);
+}
+
 .nav-menu li + li {
   margin-left: 3rem;
 }
@@ -133,7 +137,7 @@ nav {
 }
 
 .section h3 {
-  color: var(--color-darkCyan);
+  color: var(--color-moderateCyan);
   font-weight: var(--fontWeight-medium);
 }
 
@@ -155,6 +159,13 @@ main {
   justify-content: center;
   align-items: center;
   padding: 4rem 2rem 2rem 2rem;
+  position: relative;
+}
+
+.title-img {
+  position: absolute;
+  top: 0;
+  margin-top: -2rem;
 }
 
 .title h1 {
@@ -181,6 +192,11 @@ main {
   font-size: var(--fontSize-medium);
   font-weight: var(--fontWeight-bold);
   cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--color-darkCyan);
 }
 
 .btn-secondary {
@@ -189,6 +205,10 @@ main {
   display: flex;
   position: relative;
   color: var(--color-darkGray);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary i {
@@ -204,6 +224,12 @@ main {
   padding: 1rem 1.25rem;
   border-radius: 50%;
   background-color: var(--color-black);
+}
+
+.btn-secondary:hover i {
+  --darkGray-lite: 75%;
+  background-color: var(--color-darkGray);
+  color: hsl(var(--darkGray-hue), var(--darkGray-sat), var(--darkGray-lite));
 }
 
 .back-the-product {
@@ -267,9 +293,19 @@ main {
   border-radius: 50px;
 }
 
-
 .about-product p {
   line-height: 1.75;
+}
+
+.about-title h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: var(--fontWeight-bold);
+  font-size: var(--fontSize-x2-large);
+}
+
+.about-title p {
+  margin-bottom: 2rem;
 }
 
 .pkg {
@@ -310,6 +346,10 @@ main {
 }
 
 .btn-third {
+  background-color: var(--color-darkGray);
+}
+
+.btn-third:hover {
   background-color: var(--color-darkGray);
 }
 
