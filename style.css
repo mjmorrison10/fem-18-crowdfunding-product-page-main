@@ -371,6 +371,57 @@ main {
 }
 
 /* ///////////////////////////////////////////////////////////////// */
+/* Modal//////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////// */
+
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsl(
+        var(--black-hue),
+        var(--black-sat),
+        var(--black-lite),
+        0.25
+      );
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-section {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: var(--borderRadius);
+}
+
+.modal-img {
+    margin: 2rem;
+}
+
+.modal-section h1 {
+    font-size: var(--fontSize-x5-large);
+}
+
+.modal-section p {
+    margin: 1rem;
+    line-height: 2;
+    color: var(--color-darkGray);
+}
+
+.modal-section .btn {
+    margin-bottom: 2rem;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
 /* Footer/////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// */
 
@@ -447,7 +498,12 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background: hsl(var(--black-hue), var(--black-sat), var(--black-lite), 0.25);
+    background: hsl(
+      var(--black-hue),
+      var(--black-sat),
+      var(--black-lite),
+      0.25
+    );
     z-index: 10;
   }
 
