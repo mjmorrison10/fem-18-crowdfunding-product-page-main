@@ -374,6 +374,7 @@ main {
 /* Modal//////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// */
 
+.modal-first,
 .modal-second {
   position: absolute;
   top: 0;
@@ -391,6 +392,7 @@ main {
   justify-content: center;
 }
 
+.modal-first-section,
 .modal-section {
   width: 50%;
   height: auto;
@@ -402,6 +404,31 @@ main {
   flex-direction: column;
   border-radius: var(--borderRadius);
 }
+
+/* Modal first ///////////////////////////////////////////////// */
+
+.modal-first-section {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.close-modal {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-modal i {
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  font-size: var(--fontSize-medium);
+}
+
+.close-modal i:hover {
+  transform: rotate(180deg);
+}
+
+/* Modal second ///////////////////////////////////////////////// */
 
 .modal-img {
   margin: 2rem;
@@ -444,7 +471,6 @@ main {
     width: 40vw;
   }
 }
-
 
 @media (max-width: 1250px) {
   main {
