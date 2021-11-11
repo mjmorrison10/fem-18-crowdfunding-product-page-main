@@ -464,6 +464,9 @@ main {
 
   .nav-bar {
     display: flex;
+    position: fixed;
+    right: 5%;
+    z-index: 20;
   }
 
   .nav-bar i {
