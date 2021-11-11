@@ -2,7 +2,7 @@ const Navbar = document.querySelector(".nav-bar");
 const Navmenu = document.querySelector(".nav-menu");
 const ButtonProject = document.querySelector(".btn-project");
 const Pledge = document.querySelector(".btn-pledge");
-const Modal = document.querySelector(".modal");
+const ModalSecond = document.querySelector(".modal-second");
 
 Navbar.addEventListener("click", () => {
   console.log(Navbar.children[0]);
@@ -14,15 +14,15 @@ Navbar.addEventListener("click", () => {
 });
 
 ButtonProject.addEventListener("click", () => {
-  Modal.style.display = Modal.style.display == "flex" ? "none" : "flex";
+  ModalSecond.style.display = ModalSecond.style.display == "flex" ? "none" : "flex";
   setTimeout(() => {
     console.log("test");
-    Modal.style.display = "none";
+    ModalSecond.style.display = "none";
   }, 10000);
 });
 
 Pledge.addEventListener("click", () => {
-  Modal.style.display = "none";
+  ModalSecond.style.display = "none";
 });
 
 
