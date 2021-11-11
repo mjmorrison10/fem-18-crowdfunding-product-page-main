@@ -410,6 +410,7 @@ main {
     width: 90vw;
   }
   header {
+    background-image: url(./images/image-hero-mobile.jpg);
     padding: 1rem 0 0 0;
   }
 
@@ -419,7 +420,31 @@ main {
   }
   .nav-menu {
     display: none;
+    background-color: white;
+    color: var(--color-black);
+    font-weight: var(--fontWeight-bold);
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    border-radius: var(--borderRadius);
+    z-index: 20;
+    border: 1px solid
+      hsl(var(--darkGray-hue), var(--darkGray-sat), var(--darkGray-lite), 0.2);
   }
+
+  
+  .nav-menu li {
+    margin: 0.5rem 0;
+    padding: 1rem 0 1rem 2rem;
+  }
+  .nav-menu li + li {
+    margin-left: 0;
+    border-top: 1px solid
+      hsl(var(--darkGray-hue), var(--darkGray-sat), var(--darkGray-lite), 0.2);
+  }
+
   .nav-bar {
     display: flex;
   }
@@ -476,13 +501,13 @@ main {
     margin: 0.5rem 0;
   }
   .pkg-left {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .pkg-left div {
-      margin: 1rem 0;
+    margin: 1rem 0;
   }
   .pkg button {
-      margin-top: 1rem;
+    margin-top: 1rem;
   }
 }
