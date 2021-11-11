@@ -409,6 +409,7 @@ main {
   main {
     width: 90vw;
   }
+
   header {
     background-image: url(./images/image-hero-mobile.jpg);
     padding: 1rem 0 0 0;
@@ -418,6 +419,11 @@ main {
     width: 90%;
     margin: 0 auto;
   }
+
+  .crowdfund-logo {
+    z-index: 20;
+  }
+
   .nav-menu {
     display: none;
     background-color: white;
@@ -434,11 +440,22 @@ main {
       hsl(var(--darkGray-hue), var(--darkGray-sat), var(--darkGray-lite), 0.2);
   }
 
-  
+  .mobile-blackout {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsl(var(--black-hue), var(--black-sat), var(--black-lite), 0.25);
+    z-index: 10;
+  }
+
   .nav-menu li {
     margin: 0.5rem 0;
     padding: 1rem 0 1rem 2rem;
   }
+
   .nav-menu li + li {
     margin-left: 0;
     border-top: 1px solid
@@ -448,8 +465,10 @@ main {
   .nav-bar {
     display: flex;
   }
+
   .nav-bar i {
     font-size: var(--fontSize-2x-large);
+    z-index: 10;
   }
 
   .btn-secondary {
@@ -457,22 +476,27 @@ main {
     height: fit-content;
     width: fit-content;
   }
+
   .btn-secondary i {
     padding: 1rem 1.15rem;
     position: inherit;
   }
+
   .bookmark-text {
     display: none;
   }
+
   .btn-primary {
     width: 100%;
     margin-right: 1rem;
   }
+
   .backers {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .backers-total {
     border-right: none;
     border-left: none;
@@ -481,6 +505,7 @@ main {
     margin: 1rem 0;
     padding: 1rem 0;
   }
+
   .backers-sec {
     width: fit-content;
   }
@@ -494,19 +519,24 @@ main {
     align-items: flex-start;
     margin-bottom: 0;
   }
+
   .pkg-title h3 {
     margin: 0.5rem 0;
   }
+
   .about-product p {
     margin: 0.5rem 0;
   }
+
   .pkg-left {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .pkg-left div {
     margin: 1rem 0;
   }
+
   .pkg button {
     margin-top: 1rem;
   }

@@ -6,4 +6,6 @@ Navbar.addEventListener("click", () => {
   Navbar.children[0].classList.toggle("fa-bars");
   Navbar.children[0].classList.toggle("fa-times");
   Navmenu.style.display = Navmenu.style.display == "flex" ? "none" : "flex";
+  Navmenu.parentNode.style.display =
+    Navmenu.parentNode.style.display == "flex" ? "none" : "flex";
 });
