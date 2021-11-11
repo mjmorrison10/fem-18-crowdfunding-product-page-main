@@ -117,6 +117,10 @@ nav {
   margin-left: 3rem;
 }
 
+.nav-bar {
+  display: none;
+}
+
 /* ///////////////////////////////////////////////////////////////// */
 /* Main///////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// */
@@ -175,6 +179,7 @@ main {
 
 .title p {
   margin: 1rem;
+  text-align: center;
 }
 
 .button-container {
@@ -394,7 +399,6 @@ main {
   }
 }
 
-
 @media (max-width: 1250px) {
   main {
     width: 60vw;
@@ -404,5 +408,44 @@ main {
 @media (max-width: 750px) {
   main {
     width: 75vw;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+  }
+  .nav-bar i {
+    font-size: var(--fontSize-2x-large);
+  }
+  .btn-secondary {
+    padding: 0;
+  }
+  .btn-secondary i {
+    padding: 1rem 1.15rem;
+    position: inherit;
+  }
+  .bookmark-text {
+    display: none;
+  }
+  .btn-primary {
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .backers {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .backers-total {
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--color-darkGray);
+    border-top: 1px solid var(--color-darkGray);
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  .backers-sec {
+    width: fit-content;
   }
 }
