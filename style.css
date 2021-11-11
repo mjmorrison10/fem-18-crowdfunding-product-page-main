@@ -178,7 +178,7 @@ main {
 }
 
 .title p {
-  margin: 1rem;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -407,7 +407,15 @@ main {
 
 @media (max-width: 750px) {
   main {
-    width: 75vw;
+    width: 90vw;
+  }
+  header {
+    padding: 1rem 0 0 0;
+  }
+
+  nav {
+    width: 90%;
+    margin: 0 auto;
   }
   .nav-menu {
     display: none;
@@ -418,8 +426,11 @@ main {
   .nav-bar i {
     font-size: var(--fontSize-2x-large);
   }
+
   .btn-secondary {
     padding: 0;
+    height: fit-content;
+    width: fit-content;
   }
   .btn-secondary i {
     padding: 1rem 1.15rem;
@@ -447,5 +458,31 @@ main {
   }
   .backers-sec {
     width: fit-content;
+  }
+
+  .about-title h1 {
+    margin-bottom: 0;
+  }
+
+  .pkg-title {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .pkg-title h3 {
+    margin: 0.5rem 0;
+  }
+  .about-product p {
+    margin: 0.5rem 0;
+  }
+  .pkg-left {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .pkg-left div {
+      margin: 1rem 0;
+  }
+  .pkg button {
+      margin-top: 1rem;
   }
 }
