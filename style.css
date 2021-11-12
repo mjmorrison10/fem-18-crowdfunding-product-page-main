@@ -727,15 +727,29 @@ main {
   .modal-section {
     width: 90%;
   }
+
+  .bamboo-pledge-title,
+  .black-pledge-title,
+  .mahogany-pledge-title {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .pledge-title {
+    margin-bottom: 00.5rem;
+  }
+
   .back-this-project {
     font-size: var(--fontSize-x2-large);
   }
 
   .pledge p {
     margin-left: -2rem;
-    width: 125%;
   }
 
+  /* fdsfdsf
+dsgdfdu: 8fdffffdsd
+s
+;fdfdjk1 */
 
   .no-reward-pledge {
     display: flex;
@@ -744,4 +758,15 @@ main {
   .no-reward-pledge p {
     width: 100%;
   }
+}
+
+@media (max-width: 350px) {
+.pledge-title {
+    flex-wrap: wrap;
+}
+
+.pledge-title h2 {
+    margin-left: 0;
+    margin-top: .5rem;
+}
 }

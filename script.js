@@ -6,6 +6,19 @@ const ModalFirst = document.querySelector(".modal-first");
 const CloseModal = document.querySelector(".close-modal");
 const ModalSecond = document.querySelector(".modal-second");
 const PledgeToProject = document.querySelectorAll(".pledge");
+const Reward = document.querySelectorAll(".btn-reward");
+
+Reward.forEach((reward) => {
+  reward.addEventListener("click", () => {
+    ModalFirst.style.display = "none";
+    ModalSecond.style.display =
+      ModalSecond.style.display == "flex" ? "none" : "flex";
+    setTimeout(() => {
+      console.log("test");
+      ModalSecond.style.display = "none";
+    }, 30000);
+  });
+});
 
 PledgeToProject.forEach((pledge) => {
   pledge.addEventListener("click", () => {
@@ -15,7 +28,7 @@ PledgeToProject.forEach((pledge) => {
     setTimeout(() => {
       console.log("test");
       ModalSecond.style.display = "none";
-    }, 10000);
+    }, 30000);
   });
 });
 
@@ -28,21 +41,22 @@ Navbar.addEventListener("click", () => {
     Navmenu.parentNode.style.display == "flex" ? "none" : "flex";
 });
 
+// ButtonProject.forEach((project) => {
+//   project.addEventListener("click", () => {
+// ModalFirst.style.display = "flex";
+// console.log("clicked");
+//   });
+// });
+
 ButtonProject.addEventListener("click", () => {
   ModalFirst.style.display =
     ModalFirst.style.display == "flex" ? "none" : "flex";
-  //   setTimeout(() => {
-  // console.log("test");
-  // ModalSecond.style.display = "none";
-  //   }, 10000);
 });
 
 CloseModal.addEventListener("click", () => {
   ModalFirst.style.display = "none";
 });
 
-
 Pledge.addEventListener("click", () => {
   ModalSecond.style.display = "none";
 });
-
