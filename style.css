@@ -57,6 +57,7 @@
 }
 
 body {
+  position: relative;
   background-color: rgba(100, 100, 100, 0.05);
 }
 
@@ -378,7 +379,7 @@ main {
 .modal-second {
   position: absolute;
   top: 0;
-  bottom: -20rem;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: hsl(
@@ -388,13 +389,13 @@ main {
     0.25
   );
   display: none;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .modal-first-section,
 .modal-section {
-  width: 50%;
+  width: 35%;
   height: auto;
   background-color: white;
   display: flex;
@@ -402,6 +403,7 @@ main {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  margin-top: 5rem;
   border-radius: var(--borderRadius);
 }
 
@@ -424,7 +426,6 @@ main {
   transform: scale(1.02);
 }
 
-
 .modal-first-section h1 {
   transition: all 250ms ease-in-out;
 }
@@ -446,9 +447,14 @@ main {
   font-size: var(--fontSize-x5-large);
 }
 
+.modal-first-section p {
+  margin-top: 1rem;
+  line-height: 2;
+}
+
 .back-this-project {
-    font-size: var(--fontSize-2x-large);
-    margin-bottom: 1rem;
+  font-size: var(--fontSize-2x-large);
+  margin-bottom: 1rem;
 }
 
 .bamboo-pledge-title,
@@ -476,22 +482,26 @@ main {
 
 .check {
   border-radius: 50%;
-  height: 1.5rem;
-  width: 1.5rem;
+  padding: 10px;
+  height: 10px;
+  width: 10px;
   border: 1px solid var(--color-moderateCyan);
   background-color: white;
   align-self: flex-start;
   margin-right: 1rem;
 }
 
+.modal-first-section {
+  display: flex !important;
+}
+
 .mahogany-pledge {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .mahogany-pledge .check {
-    border: 1px solid var(--color-darkGray);
+  border: 1px solid var(--color-darkGray);
 }
-
 
 .close-modal {
   width: 100%;
@@ -711,5 +721,27 @@ main {
 
   .pkg button {
     margin-top: 1rem;
+  }
+
+  .modal-first-section,
+  .modal-section {
+    width: 90%;
+  }
+  .back-this-project {
+    font-size: var(--fontSize-x2-large);
+  }
+
+  .pledge p {
+    margin-left: -2rem;
+    width: 125%;
+  }
+
+
+  .no-reward-pledge {
+    display: flex;
+    flex-direction: column;
+  }
+  .no-reward-pledge p {
+    width: 100%;
   }
 }
