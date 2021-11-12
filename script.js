@@ -5,7 +5,19 @@ const Pledge = document.querySelector(".btn-pledge");
 const ModalFirst = document.querySelector(".modal-first");
 const CloseModal = document.querySelector(".close-modal");
 const ModalSecond = document.querySelector(".modal-second");
-const ModalFirstContinue = document.querySelector(".modal-first-btn");
+const PledgeToProject = document.querySelectorAll(".pledge");
+
+PledgeToProject.forEach((pledge) => {
+  pledge.addEventListener("click", () => {
+    ModalFirst.style.display = "none";
+    ModalSecond.style.display =
+      ModalSecond.style.display == "flex" ? "none" : "flex";
+    setTimeout(() => {
+      console.log("test");
+      ModalSecond.style.display = "none";
+    }, 10000);
+  });
+});
 
 Navbar.addEventListener("click", () => {
   console.log(Navbar.children[0]);
@@ -29,16 +41,8 @@ CloseModal.addEventListener("click", () => {
   ModalFirst.style.display = "none";
 });
 
+
 Pledge.addEventListener("click", () => {
   ModalSecond.style.display = "none";
 });
 
-ModalFirstContinue.addEventListener("click", () => {
-  ModalFirst.style.display = "none";
-  ModalSecond.style.display =
-    ModalSecond.style.display == "flex" ? "none" : "flex";
-  setTimeout(() => {
-    console.log("test");
-    ModalSecond.style.display = "none";
-  }, 10000);
-});
